@@ -10,6 +10,11 @@ class TeahTvApplicationTests {
 
 	Movie testMovie = new Movie();
 
+	@Test
+	public void testForAbstractEntity() {
+
+	}
+
 	@BeforeEach
 	public void createTestMovie() {
 		testMovie.setTitle("Test Movie");
@@ -24,7 +29,7 @@ class TeahTvApplicationTests {
 	String disc, and String location.
 	 */
 	@Test
-	public void testForMovieObjectTitle() {
+	public void testForMovieObject() {
 		assertAll("testMovie", () -> assertEquals("Test Movie", testMovie.getTitle()),
 				() -> assertEquals(1982, testMovie.getYear_released()), () -> assertEquals("Nate", testMovie.getDirector()),
 				() -> assertEquals("Disney", testMovie.getCategory()), () -> assertEquals("Blu-Ray", testMovie.getDisc()),

@@ -1,6 +1,9 @@
 package com.prismcortex.TeahTV;
 
-public class Movie {
+import javax.persistence.Entity;
+
+@Entity
+public class Movie extends AbstractEntity{
 
     private String title;
 
